@@ -50,7 +50,7 @@ function ExpenseForm(props) {
         e.preventDefault();
         const expenseData = {
             title: enteredTtile,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(enteredDate),
         };
         props.onSaveExpenseData(expenseData);
